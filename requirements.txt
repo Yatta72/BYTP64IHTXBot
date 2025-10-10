@@ -1,0 +1,7 @@
+discord.py
+aiohttp
+humanize
+catboxpy
+yt-dlp
+dpy-paginator
+urlextract
