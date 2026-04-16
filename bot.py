@@ -44,7 +44,7 @@ c.execute('''
 conn.commit()
 
 prefix = '.'
-theme = 0x6100FF
+theme = 0005ff
 invitelink = "https://discord.com/oauth2/authorize?client_id=1494297394391552111&permissions=274878023680&integration_type=0&scope=bot"
 bottoken = "YOUR_BOT_TOKEN_HERE" # place your bot token here
 UPLOAD_DIR = "./uploads"
