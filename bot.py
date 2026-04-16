@@ -222,7 +222,7 @@ def getyoutubeid(url: str) -> str | None:
         return match.group(1)
     return None
 @bot.command()
-async def command(ctx,*,command):
+async def ffmpeg(ctx,*,command):
     """
       Execute a FFmpeg command on a video file, works on reply.
 
@@ -922,7 +922,7 @@ async def download(ctx, url:str):
 async def invite(interaction: discord.Interaction, hide:bool=False):
   await interaction.response.send_message(f"[Click here to invite the bot anywhere!]({invitelink})",ephemeral=hide)
 
-@bot.tree.command(name="command",description="burps")
+@bot.tree.command(name="ffmpeg_any",description="Execute an FFmpeg command on a video")
 async def ffmpeg(i:discord.Interaction,video:discord.Attachment,command:str):
     """
     Execute an FFmpeg command on a Discord video link, uploaded file, or reply.
