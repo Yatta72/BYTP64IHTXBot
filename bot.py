@@ -43,7 +43,7 @@ c.execute('''
     ''')
 conn.commit()
 
-prefix = ';'
+prefix = '.'
 theme = 0x6100FF
 invitelink = "https://discord.com/oauth2/authorize?client_id=1417512460784504953&permissions=274878023680&integration_type=0&scope=bot"
 bottoken = "YOUR_BOT_TOKEN_HERE" # place your bot token here
@@ -57,7 +57,7 @@ ADDITIONAL_COMPATIBILITY = ""
 handler = logging.FileHandler(filename='discord.log',encoding='utf-8',mode='w')
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix=prefix, intents=intents)
-statuses = ["for AMTVE","everyone","NotSoBot","TADC","Robot 64","SMG4","Numberblocks"]
+statuses = ["autotune.exe","FFMPEG error","Doing IHTXes","ih hi hi huhihihjghtjsjsjsjskakajq","Ow-","GGGGGGGGGGG", "Hello."]
 @bot.event
 async def on_ready():
   print(f'Logged in as {bot.user}!')
@@ -221,9 +221,6 @@ def getyoutubeid(url: str) -> str | None:
     if match:
         return match.group(1)
     return None
-@bot.command()
-async def suggest(ctx):
-  await ctx.send("[Suggest any ideas here.](https://amtve.straw.page/suggestihtxbot)")
 @bot.command()
 async def command(ctx,*,command):
     """
