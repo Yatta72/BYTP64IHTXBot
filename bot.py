@@ -974,7 +974,7 @@ async def ffmpeg(i:discord.Interaction,video:discord.Attachment,command:str):
 
     except Exception as e:
         await i.followup.send(f"An error occurred: {str(e)}")
-@bot.tree.command(name="ihtx",description="does an ihtx on a video with a command and time and powers.")
+@bot.tree.command(name="ihtx_custom",description="Apply FFmpeg options reapeatedly and concat them")
 async def ihtx(interaction:discord.Interaction,video:discord.Attachment,command:str,powers:app_commands.Range[int,1,100],time:float=0.5):
     await interaction.response.defer()
     attachment_url = video.url
