@@ -45,7 +45,7 @@ conn.commit()
 
 prefix = '.'
 theme = 0x6100FF
-invitelink = "https://discord.com/oauth2/authorize?client_id=1417512460784504953&permissions=274878023680&integration_type=0&scope=bot"
+invitelink = "https://discord.com/oauth2/authorize?client_id=1494297394391552111&permissions=274878023680&integration_type=0&scope=bot"
 bottoken = "YOUR_BOT_TOKEN_HERE" # place your bot token here
 UPLOAD_DIR = "./uploads"
 folder.makeDir(UPLOAD_DIR)
